@@ -87,9 +87,6 @@ ul li {
 /* ==========================================================================
 	$Banner
 ========================================================================== */
-.banner-inner-wrapper {
-	float: left;
-}
 .banner-text {
 	padding-left: 25%;
 	padding-top: 45%;
@@ -106,4 +103,8 @@ ul li {
 	font-weight: 300;
 	line-height: 1.5;
 	margin-bottom: 1%;
+}
+.container {
+	float: left;
+	min-width: 300px;
 }
