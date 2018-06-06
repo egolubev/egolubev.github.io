@@ -260,6 +260,9 @@ p {
 .page-list li {
     padding-top:20px;
 }
+.page-list-m li {
+    padding-top: 0px;
+}
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .sidebar-wrapper {
