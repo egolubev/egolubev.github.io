@@ -84,6 +84,7 @@ p {
 }
 .sidebar-wrapper .profile {
   margin-bottom: 15px;
+  border-radius: 17px;
 }
 .sidebar-wrapper .contact-list .fa {
   margin-right: 5px;
@@ -100,7 +101,7 @@ p {
   font-size: 14px;
 }
 .sidebar-wrapper .container-block {
-  padding: 30px;
+  padding: 30px 15px 10px 30px;
 }
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
