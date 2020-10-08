@@ -1,6 +1,8 @@
 .margin-bottom45 {
 	margin-bottom: 45px;
 }
-.text-underline {
+a.text-underline,
+a.text-underline:active,
+a.text-underline:hover  {
 	text-decoration: underline;
 }
