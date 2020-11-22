@@ -9,3 +9,6 @@ a.text-underline:active,
 a.text-underline:hover  {
 	text-decoration: underline;
 }
+.sidebar-wrapper .contact-list .my-icon .fa {
+	font-size: 14px;
+}
