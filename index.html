@@ -1,195 +1,70 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<html lang="ru">
 <head>
-    <title>Евгений Голубев :: Веб-разработчик</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Это персональный сайт-портфолио, на котором представлена информация об опыте работы и реализованных проектах.">
-    <meta name="author" content="Голубев Евгений">
-    <link rel="shortcut icon" href="favicon.ico">  
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles-2.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="my.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script>
-        $(function(){
-            $("#right-column").load("right_column.html");
-        });
-    </script>
-</head> 
-
+    <title>egolubev.ru</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #e0e0e0 0%, #9a9a9a 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 20px;
+        }
+        
+        .domain-wrapper {
+            text-align: center;
+        }
+        
+        .domain {
+            font-size: clamp(3rem, 12vw, 7rem);
+            font-weight: 700;
+            color: #2a2a2a;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            text-shadow: 0 4px 30px rgba(255, 255, 255, 0.5);
+            display: inline-block;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.3);
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .domain:hover {
+            transform: scale(1.05) translateY(-5px);
+            background: rgba(255, 255, 255, 0.4);
+            border-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            color: #1a1a1a;
+        }
+        
+        .domain:active {
+            transform: scale(0.98);
+        }
+        
+        @media (max-width: 600px) {
+            .domain {
+                padding: 0.3em 0.8em;
+                border-radius: 15px;
+            }
+        }
+    </style>
+</head>
 <body>
-    <div class="wrapper">
-        <div id="right-column"></div>
-        <div class="main-wrapper">
-            <section class="section summary-section">
-                <h2 class="section-title"><i class="fa fa-user"></i>Род занятий</h2>
-                <div class="summary">
-                    <p>Занимаюсь разработкой, сопровождением и развитием основных web-ресурсов
-                        <a class="text-underline" target="_blank" href="https://petrsu.ru">Петрозаводского государственного университета</a>.
-                        Участвую в реализации коммерческих интернет-проектов, а также имею опыт по созданию гибридных мобильных приложений.
-                    </p>
-                </div>
-            </section>
-            <section class="section experiences-section">
-                <h2 class="section-title"><i class="fa fa-briefcase"></i>Опыт работы</h2>
-                <div class="margin-bottom15 item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Заведующий сектором</h3>
-                            <div class="time"><b>2018 - н.вр.</b></div>
-                        </div>
-                        <div class="company">Сектор разработки и сопровождения web-пространства ПетрГУ</div>
-                    </div>
-                    <!--<div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                    </div>-->
-                </div>
-                <div class="item margin-bottom15">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Программист</h3>
-                            <div class="time"><b>2017 - 2019</b></div>
-                        </div>
-                        <div class="company">ООО "Интернет-бизнес-системы"</div>
-                    </div>
-                    <!--<div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                    </div>-->
-                </div>
-                <div class="item margin-bottom15">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Ведущий программист</h3>
-                            <div class="time"><b>2013 - 2018</b></div>
-                        </div>
-                        <div class="company">Сектор научно-образовательных интернет-систем ПетрГУ</div>
-                    </div>
-                    <!--<div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                    </div>-->
-                </div>
-                <div class="item margin-bottom15">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Служба в армии</h3>
-                            <div class="time"><b>2012 - 2013</b></div>
-                        </div>
-                        <div class="company">Спецсвязь ФСО, Гатчина</div>
-                    </div>
-                    <!--<div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                    </div>-->
-                </div>
-            </section>
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-archive"></i>Реализованные проекты</h2>
-                <!--<div class="intro">
-                    <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-                </div>-->
-                <div class="item">
-                    <span class="project-title"><a class="text-underline" href="https://petrsu.ru" target="_blank">petrsu.ru</a></span> -
-                    <span class="project-tagline">официальный сайт Петрозаводского государственного университета.</span>
-                </div>
-                <div class="item">
-                    <span class="project-title"><a class="text-underline" href="https://portfolio.petrsu.ru" target="_blank">portfolio.petrsu.ru</a></span> -
-                    <span class="project-tagline">портфолио обучающихся в Петрозаводском государственном университете.</span>
-                </div>
-                <div class="item">
-                    <span class="project-title"><a class="text-underline" href="https://edu.petrsu.ru" target="_blank">edu.petrsu.ru</a></span> -
-                    <span class="project-tagline">образовательный портал Петрозаводского государственного университета.</span>
-                </div>
-                <div class="item">
-                    <span class="project-title"><a class="text-underline" href="https://books.petrsu.ru/" target="_blank">books.petrsu.ru</a></span> -
-                    <span class="project-tagline">электронный читальный зал Петрозаводского государственного университета.</span>
-                </div>
-                <div class="item">
-                    <span class="project-title"><a class="text-underline" href="https://poetica.pro" target="_blank">poetica.pro</a></span> -
-                    <span class="project-tagline">электронный научный журнал «Проблемы исторической поэтики».</span>
-                </div>
-                <p><a class="text-underline" href="/project">все проекты</a></p>
-            </section>
-            <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-rocket"></i>Владение технологиями</h2>
-                <div class="skillset">
-                    <div class="item">
-                        <h3 class="level-title">Yii | Yii2 | Laravel</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="100%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <h3 class="level-title">PHP | JS | jQuery</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="95%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <h3 class="level-title">TS | Angular | Ionic</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="50%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <h3 class="level-title">Python | Django</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="40%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <h3 class="level-title">HTML | CSS | SCSS</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="95%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <h3 class="level-title">Oracle | MySql</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="70%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <h3 class="level-title">SVN | Git | GitLab</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="80%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+    <div class="domain-wrapper">
+        <a href="https://egolubev.ru" class="domain">egolubev.ru</a>
     </div>
-    <footer class="footer">
-        <div class="text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div>
-    </footer>
 </body>
 </html>
